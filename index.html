@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/fonts.css">
+    <link rel="stylesheet" href="assets/style/animate.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <title>hungry people</title>
+</head>
+<body>
+    <div class="header_wrapper ">
+        <div class="container">
+            <nav class="menu wow fadeInDown">
+                <ul class="menu_item wow bottom1">
+                    <li>home</li>
+                    <li>about</li>
+                    <li>team</li>
+                    <li>booking</li>
+                </ul>
+                <img class="down_img" src="assets/img/wheel.svg" alt="logo">
+                <ul class="menu_item bottom2">
+                    <li>menu</li>
+                    <li>galerie</li>
+                    <li>events</li>
+                    <li>contact</li>
+                </ul>
+                <div class="burger-btn" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+            
+        </div>
+
+        <div class="image_main_wrapper">
+            <div class="time_work">
+                <h2>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</h2>
+            </div>
+            <div class="main_inform">
+                <h2>RESTAURANT</h2>
+                <h1>hungry people</h1>
+                <div class="button_case">
+                    <button class= "yellow_button wow fadeInLeft">BOOK TABLE</button>
+                    <button class= "glassy_button wow fadeInRight">EXPLORE</button>
+                </div>
+                <div class="circle_down wow fadeInUp">
+                    <span></span>
+                </div>
+            </div>
+            <div class="social_network">
+                <img src="assets/img/facebook.png" alt="facebook">
+                <img src="assets/img/twitter.png" alt="twitter">
+                <img src="assets/img/Inst.png" alt="instsagram">
+            </div>
+        </div>
+        <!-- Information on web -->
+        <div class="main_block_2">
+            <div class="about_us container">
+                <div class="inform_card_1 ">
+                    <h2 class="wow fadeInRight">about us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+                <div class="img_card_1 wow animate__fadeIn">
+                    <img src="assets/img/card_1.png" alt="campfire">
+                </div>
+            </div>
+            <div class="our_them wow fadeInRight">
+                <p class="leter wow flipInX">OUR TEAM</p>
+                <div class="master_chef">
+                    <div class="img_card_2">
+                            <img src="assets/img/card_2.png" alt="campfire">
+                    </div>
+                    <div class="inform_card_2">
+                            <h2>MASTER CHEF</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book_a_table container">
+                <div class="flex_info">
+                    <div class="inform_input">
+                        <h2>book a table</h2>
+                            <div class="input_block">
+                                    <input type="text" placeholder="Name">
+                                    <input type="text" placeholder="Email">
+                                    <input type="text" placeholder="Phone">
+                                    <input type="text" placeholder="People">
+                                    <input type="text" id="birthdayInput" placeholder="MM/DD" maxlength="5" oninput="addSlash(event)">
+                                    <input type="text" placeholder="Time">
+                            </div>
+                            <div class="button_booking">
+                                <button class="hover_btn">BOOK NOW</button>
+                            </div>
+                    </div>
+                    <div class="img_card_1">
+                        <img src="assets/img/card_3.png" alt="campfire">
+                    </div>
+                </div>
+                <div class="contact">
+                    <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782</p>
+                </div>
+            </div>
+            <div class="our_them_1">   <!--КАРУСЕЛЬ-->
+                <p class="head_p">specialties</p>
+                <div class="master_chef">
+                    <div class="img_card_2">
+                            <img src="assets/img/card_4.png" alt="campfire">
+                    </div>
+                    <div class="inform_card_2">
+                            <h2>chocolate pancakes</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rest_menu container">
+                <div class="menu_title1">
+                    <h2>DELICIOUS MENU</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                </div>
+                <div class="menu_type">
+                    <ul>
+                        <li><a href="#">SOUPE</a></li>
+                        <li><a href="#">PIZZA</a></li>
+                        <li><a href="#">PASTA</a></li>
+                        <li><a href="#">DESERT</a></li>
+                        <li><a href="#">WINE</a></li>
+                        <li><a href="#">BEER</a></li>
+                        <li><a href="#">DRINKS</a></li>
+                    </ul>
+                </div>
+
+                <div class="food_type">
+                    <div class="food_colum_1">
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="food_card">
+                                
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="food_card">
+                                
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                    </div>
+
+                    <div class="food_colum_2">
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="food_card">
+                                
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                    </div>
+
+                    <div class="food_colum_3">
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="food_card">
+                                
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="food_card">
+                                
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+
+                            <div class="food_card">
+                                <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
+                                <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="private_events">
+            <p class="head_p">PRIVATE EVENTS</p>
+            <div class="main_block_3">
+                <div class="img_1">
+                        <img src="assets/img/card_5_1.png" alt="campfire">
+                            <h2>weddings</h2>
+                </div>
+                <div class="img_2">
+                        <h2>corporate pzrties</h2>
+                    <img src="assets/img/card_5_2.png" alt="campfire">
+                </div>
+            </div>
+        </div>
+
+        <div class="collage">
+            <div class="colum_1">
+                <img src="assets/img/collage.png" alt="">
+                <img src="assets/img/collage1.png" alt="">
+            </div>
+            <div class="colum_2">
+                <img src="assets/img/collage2.png" alt="">
+                <img src="assets/img/collage3.png" alt="">
+            </div>
+        </div>
+
+        <div class="contact container">
+            <div class="contact_text">
+                <h2>CONTACT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                <div class="input_wrap">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Phone">
+                </div>
+                <div class="big_input">
+                    <input type="text" placeholder="Messenge">
+                </div>
+                <div class="ofice_info">
+                    <p><ion-icon name="location"></ion-icon>5th London Boulevard, U.K.</p>
+                    <p><ion-icon name="call"></ion-icon>+40 729 131 637/+40 726 458 782</p>
+                    <p><ion-icon name="mail"></ion-icon>office@mindblister.com</p>
+                    <button>SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23064.70474802743!2d-73.987853552314!3d40.74881700864247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b1ce7609cb%3A0x3e74c79cc7aa3fb!2sTimes%20Square%2C%20New%20York%2C%21NY%2010036%2C%20USA!5e0!3m2!1sen!2s!4v1631157689350!5m2!1sen!2s"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <footer class="footer">
+            <p>© Copyright Mindblister  2019</p>
+        </footer>
+
+        
+    </div>
+    <script src="assets/script/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/script/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+</body>
+</html>
