@@ -22,3 +22,19 @@ function addSlash(event) {
       event.preventDefault();
     }
   }
+
+
+
+  function toggleMenu() {
+    const menuItems = document.querySelector('.menu_item.bottom2');
+    menuItems.classList.toggle('show');
+}
+
+// Додамо обробник події для закриття меню при кліку на будь-який пункт меню
+const menuLinks = document.querySelectorAll('.menu_item li');
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const menuItems = document.querySelector('.menu_item.bottom2');
+        menuItems.classList.remove('show');
+    });
+});

@@ -10,22 +10,23 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/fonts.css">
     <link rel="stylesheet" href="assets/style/animate.css">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/style/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/style/media.css">
     <title>hungry people</title>
 </head>
 <body>
     <div class="header_wrapper ">
         <div class="container">
             <nav class="menu wow fadeInDown">
-                <ul class="menu_item wow bottom1">
+                <ul class="menu_item bottom1 wow fadeInLeft" data-wow-delay="0.5s">
                     <li>home</li>
                     <li>about</li>
                     <li>team</li>
                     <li>booking</li>
                 </ul>
                 <img class="down_img" src="assets/img/wheel.svg" alt="logo">
-                <ul class="menu_item bottom2">
+                <ul class="menu_item bottom2 wow fadeInRight" data-wow-delay="0.5s">
                     <li>menu</li>
                     <li>galerie</li>
                     <li>events</li>
@@ -93,9 +94,38 @@
                                     <input type="text" placeholder="Name">
                                     <input type="text" placeholder="Email">
                                     <input type="text" placeholder="Phone">
-                                    <input type="text" placeholder="People">
+                                    <select id="peopleInput">
+                                        <option value="" disabled selected>People</option>
+                                        <option value="1">1 GUEST</option>
+                                        <option value="2">2 GUEST</option>
+                                        <option value="3">3 GUEST</option>
+                                        <option value="4">4 GUEST</option>
+                                        <option value="5">5 GUEST</option>
+                                        <option value="6">6 GUEST</option>
+                                        <option value="7">7 GUEST</option>
+                                        <option value="8">8 GUEST</option>
+                                        <option value="9">9 GUEST</option>
+                                        <option value="10">10 GUEST</option>
+                                    </select>
                                     <input type="text" id="birthdayInput" placeholder="MM/DD" maxlength="5" oninput="addSlash(event)">
-                                    <input type="text" placeholder="Time">
+                                    <select id="timeInput">
+                                        <option value="" disabled selected>Time</option>
+                                        <option value="08:00 AM">08:00 AM</option>
+                                        <option value="09:00 PM">09:00 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="12:00 AM">12:00 AM</option>
+                                        <option value="1:00 PM">1:00 PM</option>
+                                        <option value="2:00 PM">2:00 PM</option>
+                                        <option value="3:00 PM">3:00 PM</option>
+                                        <option value="4:00 PM">4:00 PM</option>
+                                        <option value="5:00 PM">5:00 PM</option>
+                                        <option value="6:00 PM">6:00 PM</option>
+                                        <option value="7:00 PM">7:00 PM</option>
+                                        <option value="8:00 PM">8:00 PM</option>
+                                        <option value="9:00 PM">9:00 PM</option>
+                                        <option value="10:00 PM">10:00 PM</option>
+                                    </select>
                             </div>
                             <div class="button_booking">
                                 <button class="hover_btn">BOOK NOW</button>
@@ -109,25 +139,59 @@
                     <p>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782</p>
                 </div>
             </div>
-            <div class="our_them_1">   <!--КАРУСЕЛЬ-->
-                <p class="head_p">specialties</p>
-                <div class="master_chef">
-                    <div class="img_card_2">
-                            <img src="assets/img/card_4.png" alt="campfire">
+            <div class="owl-carousel owl-theme wow fadeInLeft">
+                <div class="item wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="our_them_1">   <!--КАРУСЕЛЬ-->
+                        <p class="head_p">specialties</p>
+                        <div class="master_chef">
+                            <div class="img_card_2">
+                                    <img src="assets/img/card_4.png" alt="campfire">
+                            </div>
+                            <div class="inform_card_2">
+                                    <h2>chocolate pancakes</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="inform_card_2">
-                            <h2>chocolate pancakes</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                </div>
+
+                <div class="item">
+                    <div class="our_them_1">   <!--КАРУСЕЛЬ-->
+                        <p class="head_p">specialties</p>
+                        <div class="master_chef">
+                            <div class="img_card_2">
+                                    <img src="assets/img/card_4.png" alt="campfire">
+                            </div>
+                            <div class="inform_card_2">
+                                    <h2>chocolate pancakes</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" >
+                    <div class="our_them_1">   <!--КАРУСЕЛЬ-->
+                        <p class="head_p">specialties</p>
+                        <div class="master_chef">
+                            <div class="img_card_2">
+                                    <img src="assets/img/card_4.png" alt="campfire">
+                            </div>
+                            <div class="inform_card_2">
+                                    <h2>chocolate pancakes</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="rest_menu container">
-                <div class="menu_title1">
+                <div class="menu_title1 wow fadeInRight" data-wow-delay="1s">
                     <h2>DELICIOUS MENU</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
                 </div>
-                <div class="menu_type">
+                <div class="menu_type wow fadeInDown">
                     <ul>
                         <li><a href="#">SOUPE</a></li>
                         <li><a href="#">PIZZA</a></li>
@@ -140,7 +204,7 @@
                 </div>
 
                 <div class="food_type">
-                    <div class="food_colum_1">
+                    <div class="food_colum_1 wow fadeInLeft">
                             <div class="food_card">
                                 <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
                                 <p>Integer ullamcorper neque eu purus euismod</p>
@@ -177,7 +241,7 @@
                             </div>
                     </div>
 
-                    <div class="food_colum_2">
+                    <div class="food_colum_2 wow fadeInUp">
                             <div class="food_card">
                                 <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
                                 <p>Integer ullamcorper neque eu purus euismod</p>
@@ -213,7 +277,7 @@
                             </div>
                     </div>
 
-                    <div class="food_colum_3">
+                    <div class="food_colum_3 wow fadeInRight">
                             <div class="food_card">
                                 <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
                                 <p>Integer ullamcorper neque eu purus euismod</p>
@@ -270,28 +334,28 @@
 
         <div class="collage">
             <div class="colum_1">
-                <img src="assets/img/collage.png" alt="">
-                <img src="assets/img/collage1.png" alt="">
+                <img class="wow fadeInRight" data-wow-delay="0.3s" src="assets/img/collage.png" alt="">
+                <img  class="wow fadeInRight" data-wow-delay="0.6s" src="assets/img/collage1.png" alt="">
             </div>
             <div class="colum_2">
-                <img src="assets/img/collage2.png" alt="">
-                <img src="assets/img/collage3.png" alt="">
+                <img  class="wow fadeInRight" data-wow-delay="0.9s" src="assets/img/collage2.png" alt="">
+                <img  class="wow fadeInRight" data-wow-delay="1.2s" src="assets/img/collage3.png" alt="">
             </div>
         </div>
 
         <div class="contact container">
-            <div class="contact_text">
+            <div class="contact_text wow fadeInLeft">
                 <h2>CONTACT</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-                <div class="input_wrap">
+                <div class="input_wrap wow fadeInUp">
                     <input type="text" placeholder="Name">
                     <input type="text" placeholder="Email">
                     <input type="text" placeholder="Phone">
                 </div>
-                <div class="big_input">
+                <div class="big_input wow fadeInLeft">
                     <input type="text" placeholder="Messenge">
                 </div>
-                <div class="ofice_info">
+                <div class="ofice_info wow  fadeInUp">
                     <p><ion-icon name="location"></ion-icon>5th London Boulevard, U.K.</p>
                     <p><ion-icon name="call"></ion-icon>+40 729 131 637/+40 726 458 782</p>
                     <p><ion-icon name="mail"></ion-icon>office@mindblister.com</p>
@@ -300,14 +364,21 @@
             </div>
         </div>
         <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23064.70474802743!2d-73.987853552314!3d40.74881700864247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b1ce7609cb%3A0x3e74c79cc7aa3fb!2sTimes%20Square%2C%20New%20York%2C%21NY%2010036%2C%20USA!5e0!3m2!1sen!2s!4v1631157689350!5m2!1sen!2s"
+                <iframe class="wow zoomIn" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23064.70474802743!2d-73.987853552314!3d40.74881700864247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b1ce7609cb%3A0x3e74c79cc7aa3fb!2sTimes%20Square%2C%20New%20York%2C%21NY%2010036%2C%20USA!5e0!3m2!1sen!2s!4v1631157689350!5m2!1sen!2s"
                 width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <footer class="footer">
             <p>© Copyright Mindblister  2019</p>
         </footer>
 
-        
+        <div class="footer_media_none">
+            <p>© Copyright Mindblister  2019</p>
+            <div class="footer_img">
+                <img src="assets/img/twitter_footer.png" alt="">
+                <img src="assets/img/inst.png" alt="">
+                <img src="assets/img/fasebook_footer.png" alt="">
+            </div>
+        </div>
     </div>
     <script src="assets/script/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -316,7 +387,23 @@
     <script>
         new WOW().init();
     </script>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="assets/script/owl.carousel.min.js"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+        margin:20,
+        loop:false,
+        autoWidth:false,
+        nav:false,
+        items:1
+    })
+    $(document).ready(function () {
+        // Вибираємо всі крапки навігації відповідно до класу
+        var dots = $(".owl-dots .owl-dot" + 1);
+
+        // Приховуємо останню крапку
+        dots.last().hide();
+    });
+    </script>
 </body>
 </html>
