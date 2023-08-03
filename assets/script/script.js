@@ -16,7 +16,6 @@ function addSlash(event) {
     input.value = value;
   }
   function validateKey(event) {
-    // Забороняємо вводити нецифрові символи, крім слеша ("/") та цифр
     const allowedKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     if (!allowedKeys.includes(event.key)) {
       event.preventDefault();
@@ -30,7 +29,6 @@ function addSlash(event) {
     menuItems.classList.toggle('show');
 }
 
-// Додамо обробник події для закриття меню при кліку на будь-який пункт меню
 const menuLinks = document.querySelectorAll('.menu_item li');
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -38,3 +36,28 @@ menuLinks.forEach(link => {
         menuItems.classList.remove('show');
     });
 });
+
+
+// API GOOGLE MAP
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 40.8756712, lng: 14.4423124},
+    zoom: 20
+  });
+}
+
+
+//menu food card update
+function showMenuContent(){
+  let menuContents = document.querySelectorAll('food_card');
+  menuContents.forEach(function(content){
+    content.style.display = "none";
+  });
+
+  let selectedMenuContent = document.getElementById("menu_" + menuType);
+  selectedMenuContent.style.display = "block";
+}
+document.getElementById("menu_soupe").addEventListener("click", function() {
+  showMenuContent("menu_soupe");
+});
+

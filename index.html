@@ -193,13 +193,13 @@
                 </div>
                 <div class="menu_type wow fadeInDown">
                     <ul>
-                        <li><a href="#">SOUPE</a></li>
-                        <li><a href="#">PIZZA</a></li>
-                        <li><a href="#">PASTA</a></li>
-                        <li><a href="#">DESERT</a></li>
-                        <li><a href="#">WINE</a></li>
-                        <li><a href="#">BEER</a></li>
-                        <li><a href="#">DRINKS</a></li>
+                        <li><a href="" id="menu_soupe">SOUPE</a></li>
+                        <li><a href="" id="menu_pizza">PIZZA</a></li>
+                        <li><a href="" id="menu_pasta">PASTA</a></li>
+                        <li><a href="" id="menu_desert">DESERT</a></li>
+                        <li><a href="" id="menu_wine">WINE</a></li>
+                        <li><a href="" id="menu_beer">BEER</a></li>
+                        <li><a href="" id="menu_drinks">DRINKS</a></li>
                     </ul>
                 </div>
 
@@ -238,6 +238,10 @@
                             <div class="food_card">
                                 <h3>PIZZA QUATRO STAGIONI . . . . 55,68 USD</h3>
                                 <p>Integer ullamcorper neque eu purus euismod</p>
+                            </div>
+                            <div class="food_card wow fadeInLeft" id="soupe_type">
+                                <h3>SYP v 00:58</h3>
+                                <p>chogo ya blyat ne splu</p>
                             </div>
                     </div>
 
@@ -363,10 +367,7 @@
                 </div>
             </div>
         </div>
-        <div class="map">
-                <iframe class="wow zoomIn" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23064.70474802743!2d-73.987853552314!3d40.74881700864247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259b1ce7609cb%3A0x3e74c79cc7aa3fb!2sTimes%20Square%2C%20New%20York%2C%21NY%2010036%2C%20USA!5e0!3m2!1sen!2s!4v1631157689350!5m2!1sen!2s"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <div id="map"></div>
         <footer class="footer">
             <p>© Copyright Mindblister  2019</p>
         </footer>
@@ -405,5 +406,6 @@
         dots.last().hide();
     });
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyCOEVttgOiLIYDcELx_ehirak6lKOnrY&callback=initMap" async defer></script>
 </body>
 </html>

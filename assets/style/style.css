@@ -556,6 +556,10 @@
   font-weight: 700;
 }
 
+#menu_soupe{
+  display: none;
+}
+
 
 /* block private_events */
 .private_events{
@@ -698,9 +702,10 @@ top: 43%;
 .contact.container {
   min-height: 400px;
 }
-.map{
+#map{
   padding-top: 200px;
   margin:1px 1px 0 1px;
+  height: 475px;
 }
 .footer{
   display: flex;
